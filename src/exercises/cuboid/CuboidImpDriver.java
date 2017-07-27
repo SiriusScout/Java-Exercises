@@ -8,6 +8,7 @@ public class CuboidImpDriver {
 		ciObj.setHeight(6);
 		ciObj.setBreadth(3);
 		System.out.println(ciObj.toString());
+		System.out.println(ciObj.getVolume());
 		
 	}
 
