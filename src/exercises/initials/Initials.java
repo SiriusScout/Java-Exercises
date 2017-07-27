@@ -1,8 +1,5 @@
 package exercises.initials;
 
-//import java.util.ArrayList;
-//import java.util.List;
-
 //this class is used to find the name of a person and then get the users initials
 public class Initials {
 	

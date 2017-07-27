@@ -2,7 +2,7 @@ package exercises.personhashmap;
 
 public class PersonalHashTableDriver {
 //	public static void main(String[] args) {
-//		PersonalHashTable<String, Integer> phtObj = new PersonalHashTable<String,Integer>();
+//		HashTable<String, Integer> phtObj = new PersonalHashTable<String,Integer>();
 //		
 //		System.out.println(phtObj.containsKey("A"));
 //		phtObj.put("A", 1);
