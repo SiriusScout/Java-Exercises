@@ -20,7 +20,7 @@ public class NumeratorDivisor {
 			System.out.print(" Denominator: ");
 			denStr = reader.next();
 			
-			//checking if quiting
+			//checking if quitting
 			if(numStr.charAt(0) == 'q' || numStr.charAt(0) == 'Q') {
 				complete = true;
 				System.out.println("EXIT");
@@ -40,6 +40,7 @@ public class NumeratorDivisor {
 					
 				}catch(IllegalArgumentException divideByZero) {
 					divideByZero.printStackTrace();
+					//System.out.println();
 				}finally {
 					//defaulting values
 					num = 0.0;

@@ -44,6 +44,7 @@ public class NumberFormatExceptionCheck {
 			}
 			finally {
 				num = 0.0;
+				numStr = "";
 			}
 		}
 		

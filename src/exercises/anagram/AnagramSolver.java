@@ -32,13 +32,15 @@ public class AnagramSolver implements Anagram{
 	public Boolean comparePair(String anagramOne, String anagramTwo) {
 		Boolean result = false;
 		int trackingVal = 0;
+		char anaArray[];
 		Map<Character,Integer> anagramOneMap = new HashMap<Character,Integer>();
 		Map<Character,Integer> anagramTwoMap = new HashMap<Character,Integer>();
 		
 		//goes through each character of the first word
-		for(Character letter : anagramOne.toLowerCase().toCharArray()) {
+		anaArray = anagramOne.toLowerCase().toCharArray();
+		for(Character letter : anaArray) {
 			if(Character.isAlphabetic(letter)) {						//checks to see if its a letter (ignores spaces and punctuation
-				if(anagramOneMap.get(letter) == null)					//if no value has been mapped yet
+				if(!anagramOneMap.containsKey(letter))					//if no value has been mapped yet
 					trackingVal = 0;
 				else
 					trackingVal = anagramOneMap.get(letter);
@@ -47,9 +49,10 @@ public class AnagramSolver implements Anagram{
 		}
 		
 		//goes through each character of the second word
-		for(Character letter : anagramTwo.toLowerCase().toCharArray()) {
+		anaArray = anagramTwo.toLowerCase().toCharArray();
+		for(Character letter : anaArray) {
 			if(Character.isAlphabetic(letter)) {
-				if(anagramTwoMap.get(letter) == null)
+				if(!anagramTwoMap.containsKey(letter))
 					trackingVal = 0;
 				else
 					trackingVal = anagramTwoMap.get(letter);

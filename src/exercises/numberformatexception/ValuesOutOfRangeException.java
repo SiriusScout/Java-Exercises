@@ -15,12 +15,12 @@ public class ValuesOutOfRangeException extends RuntimeException {
 		super(message);
 	}
 	
-	public ValuesOutOfRangeException(Throwable cause) {
-		super(cause);
-	}
-	
-	public ValuesOutOfRangeException(String message, Throwable cause) {
-		super(message, cause);
-	}
-	
+//	public ValuesOutOfRangeException(Throwable cause) {
+//		super(cause);
+//	}
+//	
+//	public ValuesOutOfRangeException(String message, Throwable cause) {
+//		super(message, cause);
+//	}
+//	
 }
